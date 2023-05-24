@@ -1,0 +1,55 @@
+.bow-cms-element-config {
+    .content--header {
+
+        border-bottom: solid 2px;
+    }
+
+    .mastertbl {
+        width: 100%;
+        margin: auto;
+        border: solid 2px;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .column {
+        .cell-content {
+
+            border-bottom: solid 2px;
+            align-items: center;
+            justify-content: center;
+
+            .add-btn,
+            .delete-btn {
+                flex-grow: 1;
+                margin: 0 5px;
+            }
+        }
+    }
+
+    .add-btn,
+    .delete-btn {
+        background-color: #39f436;
+        border: none;
+        color: white;
+        padding: 10px 20px;
+        text-align: center;
+        text-decoration: none;
+        display: inline-block;
+        font-size: 16px;
+        margin: 10px;
+        cursor: pointer;
+    }
+
+    .add-btn:hover {
+        background-color: #033105;
+    }
+
+    .delete-btn {
+        background-color: yellow;
+    }
+
+    .delete-btn:hover {
+        background-color: goldenrod;
+    }
+}

@@ -1,0 +1,132 @@
+/*Styles für Contact Form in Administration Panel*/
+
+$black: #455A64;
+$green: #00FF47;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  color-scheme: light;
+  cursor: pointer;
+}
+
+
+
+
+.sw-cms-el-form {
+  display: flex;
+  width: 100%;
+  flex-wrap: nowrap;
+  overflow: hidden;
+  background-color: #bfbebe;
+  cursor: pointer;
+
+}
+
+
+
+/* mixin für box mit 4 Parameter: farbe, border, padding*/
+@mixin box() {
+  outline: none;
+  border: none;
+  background: $black;
+  color: #fff;
+  text-transform: uppercase;
+  font-style: italic;
+}
+
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: all .2s linear;
+}
+
+.message {
+  margin-top: 20px;
+}
+
+#contact {
+  height: auto;
+  width: 100%;
+  display: grid;
+  place-items: center;
+  background-size: 100% 10rem;
+  background-position: top;
+  text-transform: uppercase;
+  color: #455a64;
+  background-color: #b9b8b8;
+  padding: 10px 20px;
+
+  h1 {
+    margin: 10rem 0;
+    font-size: 2.5rem;
+    text-align: center;
+
+    span {
+      color: $green !important;
+      font-style: italic;
+    }
+  }
+
+  .contact-container {
+    /*width: 90vw;*/
+
+    .column {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(25rem, 1fr));
+      grid-gap: 2rem;
+
+      .box {
+        @include box();
+        height: 4rem;
+        padding: 0 2rem;
+
+        &::placeholder {
+          color: #fff;
+        }
+      }
+    }
+
+    .msg-box {
+      width: 100%;
+      resize: none;
+      height: 10rem;
+      padding: 5rem 2rem;
+      margin-top: 2rem;
+      @include box();
+
+      &::placeholder {
+        color: #fff;
+      }
+    }
+
+  }
+
+  input[type="submit"] {
+    @include box();
+    background: $green;
+    padding: 1rem 2rem;
+    margin: 2rem 0;
+
+
+    &:hover {
+      background: $black;
+    }
+  }
+}
+
+
+@media(max-width:768px) {
+  #contact {
+    .contact-container {
+      form {
+        .column2 {
+          grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
+        }
+      }
+    }
+  }
+}

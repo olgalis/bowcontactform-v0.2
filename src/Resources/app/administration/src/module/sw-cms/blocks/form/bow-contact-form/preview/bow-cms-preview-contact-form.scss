@@ -1,0 +1,51 @@
+@import "~scss/variables";
+
+$color-background-form: #d3eff0;
+
+.bow-cms-preview-contact-form {
+    background-color: $color-background-form;
+    padding: 15px;
+    overflow: auto;
+
+    .bow-cms-preview-contact-form-headline {
+        margin-bottom: 10px;
+        border-bottom: 1px solid $color-black;
+        padding-bottom: 10px;
+    }
+
+    .bow-cms-preview-contact-form_layout{
+        text-align: center;
+    }
+
+    .bow-cms-preview-form-inputs {
+        overflow: auto;
+        border-color: $color-black;
+
+        & > .bow-cms-preview-form-input {
+            width: calc(50% - 7px);
+            float: left;
+
+            &:first-child {
+                margin-right: 14px;
+            }
+        }
+    }
+
+    .bow-cms-preview-form-input {
+        margin-bottom: 10px;
+        height: 1.7em;
+        border-radius: 4px;
+        border: 1px solid $color-gray-300;
+    }
+
+    .bow-cms-preview-form-input__action {
+        float: right;
+        padding: 0 10px;
+        background: $color-gray-300;
+        color: $color-darkgray-200;
+        text-align: center;
+        font-size: 12px;
+        line-height: 26px;
+        border-radius: 3px;
+    }
+}

@@ -1,0 +1,38 @@
+{% block bow_cms_element_contact_form %}
+<div class="sw-cms-el-form">
+    <div id="contact">
+        <div>
+            <h1> for details <span> contact us </span></h1> </div>
+        <div class="contact-container">
+
+            <form action="">
+                <div class="column">
+
+                    <input type="text" id="first_name" name="first_name" placeholder="First Name" class="box" required>
+
+                    <input type="text" id="last_name" placeholder="Last Name" name="last_name" class="box" required>
+
+                    <input type="email" id="email" name="email" placeholder="E-Mail" class="box" required>
+
+                    <input type="tel" id="phone" name="phone" placeholder="Phone" class="box" required>
+
+                    <input type="text" id="subject" name="subject" placeholder="Subject" class="box" required>
+
+                    <input type="Company" id="Company" name="Company" placeholder="Company" class="box" required>
+                </div>
+                <div>
+                    <label class="message" for="message" >Message:</label>
+                    <textarea placeholder="type your message" name="message" cols="30" rows="10" class="msg-box" required></textarea>
+                </div>
+            <div v-for="item in items" class="sw-cms-el-bow-contact-form__item">
+        <sw-collapse>
+            <input type="Checkbox" slot="content">{{ item.content }}</input>
+        </sw-collapse>
+    </div>
+                <input type="submit" value="send">
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
