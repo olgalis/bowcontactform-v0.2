@@ -1,2 +1,2 @@
 # bowcontactform-v0.2
-Es ist mein Projekt für IHK Abschluss Prüfung 
+Creation of a universal Shopware plugin with a contact form and customizable fields. The plugin offers predefined fields such as first name, last name, email, phone number, subject and message as well as the possibility to add and delete additional lines with dropdown, radio button and checkbox fields. Although the project was successfully completed, some planned features could not be fully implemented. Nevertheless, the developed plugin will enable future time savings in further development.
